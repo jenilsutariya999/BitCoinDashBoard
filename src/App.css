@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.app {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #5d2ec9;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.sidebar .support {
+  margin-top: 40px;
+  color: grey;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  margin-left: 400px;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-section h2 {
+  font-size: 24px;
+}
+
+.portfolio-section p {
+  font-size: 28px;
+  color: green;
+}
+
+.current-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.buy-btn, .sell-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #5d2ec9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.transactions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions table th, .transactions table td {
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  text-align: left;
+}
+
+.transactions table th {
+  background-color: #f5f5f5;
+}
