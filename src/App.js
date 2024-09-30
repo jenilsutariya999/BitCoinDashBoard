@@ -8,7 +8,7 @@ import BookingForm from './components/BookingForm';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/BitCoinDashBoard">
       <div className="app">
         <Sidebar />
         <div className="main-content">
