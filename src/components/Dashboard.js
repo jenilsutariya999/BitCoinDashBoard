@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
@@ -17,6 +17,20 @@ const data1D = [
   { time: '12:55 PM', price: 26600 },
   { time: '6:35 PM', price: 26400 },
   { time: '7:15 PM', price: 26300 },
+];
+
+const data1W = [
+  { time: 'Week 1', price: 25000 },
+  { time: 'Week 2', price: 26000 },
+  { time: 'Week 3', price: 25500 },
+  { time: 'Week 4', price: 27000 },
+];
+
+const data1M = [
+  { time: 'Week 1', price: 24000 },
+  { time: 'Week 2', price: 25000 },
+  { time: 'Week 3', price: 26000 },
+  { time: 'Week 4', price: 27000 },
 ];
 
 const Dashboard = () => {
@@ -40,10 +54,8 @@ const Dashboard = () => {
       fetchLivePrice(); 
     }, 10000);
 
-
     return () => clearInterval(intervalId);
   }, []);
-
 
   const handleTimeRangeChange = (range) => {
     setTimeRange(range);
@@ -55,10 +67,10 @@ const Dashboard = () => {
         setChartData(data1D);
         break;
       case '1W':
-        
+        setChartData(data1W);
         break;
       case '1M':
-      
+        setChartData(data1M);
         break;
       default:
         break;
@@ -68,7 +80,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="current-price-section">
-      <h3>Live Bitcoin Price: {livePrice ? `₹${livePrice}` : 'Loading...'}</h3>
+        <h3>Live Bitcoin Price: {livePrice ? `₹${livePrice}` : 'Loading...'}</h3>
         <button className="buy-btn">Buy</button>
         <button className="sell-btn">Sell</button>
       </div>
