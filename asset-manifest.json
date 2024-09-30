@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jenilsutariya999/BitCoinDashBoard/static/css/main.6fd5b7c2.css",
-    "main.js": "/jenilsutariya999/BitCoinDashBoard/static/js/main.d9d56139.js",
+    "main.js": "/jenilsutariya999/BitCoinDashBoard/static/js/main.1d7ad37c.js",
     "static/js/453.5ebd66a1.chunk.js": "/jenilsutariya999/BitCoinDashBoard/static/js/453.5ebd66a1.chunk.js",
     "index.html": "/jenilsutariya999/BitCoinDashBoard/index.html",
     "main.6fd5b7c2.css.map": "/jenilsutariya999/BitCoinDashBoard/static/css/main.6fd5b7c2.css.map",
-    "main.d9d56139.js.map": "/jenilsutariya999/BitCoinDashBoard/static/js/main.d9d56139.js.map",
+    "main.1d7ad37c.js.map": "/jenilsutariya999/BitCoinDashBoard/static/js/main.1d7ad37c.js.map",
     "453.5ebd66a1.chunk.js.map": "/jenilsutariya999/BitCoinDashBoard/static/js/453.5ebd66a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6fd5b7c2.css",
-    "static/js/main.d9d56139.js"
+    "static/js/main.1d7ad37c.js"
   ]
 }
